@@ -43,7 +43,7 @@ Download the Addin here:
 
 Install on Windows by copying to:
 
-* C:\Users\\<yourusername>\AppData\Local\XamarinStudio-4.0\LocalInstall\Addins
+* C:\Users\yourusername\AppData\Local\XamarinStudio-4.0\LocalInstall\Addins
 
 Install on OSX/Linux by copying to: (untested)
 

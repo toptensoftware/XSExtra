@@ -1,6 +1,6 @@
 # XSExtra
 
-XSExtra is a little addin for [Xamarin Studio](http://xamarin.com/studio) that adds a couple of handy little commands:
+XSExtra is a little addin for [Xamarin Studio](http://xamarin.com/studio) that adds a couple of handy commands:
 
 ## Features
 
@@ -16,7 +16,7 @@ eg: Say you have `MyClass.cs` with something like:
 	{
 	}
 
-Right click on the file in Solution explorer, and choose Duplicate.  Enter a new name, say "MyNewClass" and press OK.  You'll get a new file `MyNewClass` with the same project settings containing this:
+Right click on the file in Solution explorer, and choose Duplicate.  Enter a new name, say "MyNewClass" and press OK.  You'll get a new file `MyNewClass.cs` with the same project settings containing this:
 
 	using System;
 

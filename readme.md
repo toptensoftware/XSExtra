@@ -35,6 +35,18 @@ Right click on a project or solution file and choose "Edit as Text" to open the 
 NB: There's a small issue with using this on .sln files where Xamarin Studio will remove the file from it's recently used solution list. Oh well.
 
 
+### Synchronize with File System Command
+
+Right click on a project folder and choose "Synchronize with File System" to update the project to match files found in the file system.  New files will be added, missing files will be removed,  linked files will be left alone.
+
+Caveats:
+
+* Only available on sub-folders of the project - not the project itself, that seemed just a little to risky.
+* Newly added files will have a default build action as determined by Xamarin Studio/MonoDevelop
+* Renaming a file externally will work, but if it has a non-default build action that may need to be reset. (Since renaming a file is treated as remove/add file).
+* Files that are present both in the project and in the file system are not affected and therefore build action and other project properties are retained.
+
+
 ## Download and Installation
 
 Download the Addin here:

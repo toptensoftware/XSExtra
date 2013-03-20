@@ -56,6 +56,7 @@ namespace MonoDevelop.XSExtra
 			var file2 = (ProjectFile)file.Clone();
 			file2.Name = prompt.NewFileName;
 			project.AddFile(file2);
+			MonoDevelop.Ide.IdeApp.ProjectOperations.Save(project);
 
 			// Open the file
 			IdeApp.Workbench.OpenDocument (file2.FilePath);

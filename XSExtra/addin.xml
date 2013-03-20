@@ -21,6 +21,10 @@
 				id = "MonoDevelop.XSExtra.Commands.EditAsText" 
 				_label = "Edit as Text" 
 				/>
+		<Command 
+				id = "MonoDevelop.XSExtra.Commands.SyncWithFileSystem" 
+				_label = "Synchronize with File System" 
+				/>
 	</Extension>
 	
 	<Extension path = "/MonoDevelop/Ide/Pads/ProjectPad">
@@ -34,6 +38,9 @@
 		</Condition>
 		<Condition id="ItemType" value="Project|Solution">
 			<CommandItem id="MonoDevelop.XSExtra.Commands.EditAsText" insertafter="MonoDevelop.Ide.Commands.ProjectCommands.Options"/>
+		</Condition>
+		<Condition id="ItemType" value="ProjectFolder">
+			<CommandItem id="MonoDevelop.XSExtra.Commands.SyncWithFileSystem"/>
 		</Condition>
 	</Extension>
 	

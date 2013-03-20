@@ -6,6 +6,7 @@ namespace MonoDevelop.XSExtra
 	{
 		DuplicateFile,
 		EditAsText,
+		SyncWithFileSystem,
 	}
 }
 

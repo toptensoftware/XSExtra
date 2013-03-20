@@ -1,5 +1,6 @@
 using System;
 using Gtk;
+using System.Collections.Generic;
 
 namespace MonoDevelop.XSExtra
 {
@@ -21,6 +22,30 @@ namespace MonoDevelop.XSExtra
 			finally
 			{
 				md.Destroy();
+			}
+		}
+
+		public static void GetFilesRecursively(string folder, List<string> files)
+		{
+			// Add files in this folder
+			files.AddRange(System.IO.Directory.GetFiles(folder));
+
+			// Recurse sub-folders
+			foreach (var subfolder in System.IO.Directory.GetDirectories(folder))
+			{
+				GetFilesRecursively(subfolder, files);
+			}
+		}
+
+		public static void GetFoldersRecursively(string folder, List<string> folders)
+		{
+			// Add this folder
+			folders.Add(folder);
+
+			// Recurse sub-folders
+			foreach (var subfolder in System.IO.Directory.GetDirectories(folder))
+			{
+				GetFoldersRecursively(subfolder, folders);
 			}
 		}
 	}

@@ -45,9 +45,11 @@ Install on Windows by copying to:
 
 * C:\Users\yourusername\AppData\Local\XamarinStudio-4.0\LocalInstall\Addins
 
-Install on OSX/Linux by copying to: (untested)
+Install on OSX/Linux like this:
 
-* ~/Library/Application Support/XamarinStudio-4.0/LocalInstall/Addins
+	mkdir -p ~/Library/Application\ Support/XamarinStudio-4.0/LocalInstall/Addins
+	cd ~/Library/Application\ Support/XamarinStudio-4.0/LocalInstall/Addins
+	curl -OL https://github.com/toptensoftware/XSExtra/raw/master/out/XSExtra.dll
 
 Should also work in MonoDevelop, but not tested.
 
